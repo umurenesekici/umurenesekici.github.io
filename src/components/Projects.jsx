@@ -31,15 +31,15 @@ const icons = {
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 px-6 bg-[var(--bg-secondary)]">
+    <section id="projects" className="py-20 px-6 bg-(--bg-secondary)">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-3 mb-6">
-          <span className="font-mono text-[var(--accent-light)] text-sm">05.</span>
-          <h2 className="text-2xl lg:text-3xl font-bold text-[var(--text-primary)]">Projeler</h2>
-          <span className="flex-1 h-px bg-[var(--border)]"></span>
+          <span className="font-mono text-(--accent-light) text-sm">05.</span>
+          <h2 className="text-2xl lg:text-3xl font-bold text-(--text-primary)">Projeler</h2>
+          <span className="flex-1 h-px bg-(--border)"></span>
         </div>
 
-        <p className="text-[var(--text-secondary)] text-sm lg:text-base max-w-3xl mb-10 leading-relaxed">
+        <p className="text-(--text-secondary) text-sm lg:text-base max-w-3xl mb-10 leading-relaxed">
           {projectsNote}
         </p>
 
@@ -47,11 +47,11 @@ export default function Projects() {
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-6 hover:border-[var(--accent)]/50 transition-colors duration-300"
+              className="bg-(--surface) border border-(--border) rounded-lg p-6 hover:border-(--accent)/50 transition-colors duration-300"
             >
               <div className="flex items-center justify-between mb-4">
                 <svg
-                  className="w-7 h-7 text-[var(--accent-light)]"
+                  className="w-7 h-7 text-(--accent-light)"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -59,19 +59,19 @@ export default function Projects() {
                 >
                   {icons[project.icon]}
                 </svg>
-                <span className="text-xs font-mono px-2.5 py-1 rounded bg-[var(--accent-dim)] text-[var(--accent-light)]">
+                <span className="text-xs font-mono px-2.5 py-1 rounded bg-(--accent-dim) text-(--accent-light)">
                   {project.country}
                 </span>
               </div>
-              <h3 className="text-base font-semibold text-[var(--text-primary)] mb-2 leading-snug">
+              <h3 className="text-base font-semibold text-(--text-primary) mb-2 leading-snug">
                 {project.name}
               </h3>
-              <p className="text-sm text-[var(--text-secondary)] leading-relaxed">{project.description}</p>
+              <p className="text-sm text-(--text-secondary) leading-relaxed">{project.description}</p>
             </div>
           ))}
         </div>
 
-        <p className="text-xs text-[var(--text-muted)] mt-8">
+        <p className="text-xs text-(--text-muted) mt-8">
           Gizlilik politikaları nedeniyle proje detayları kapsamlı olarak paylaşılamamaktadır.
         </p>
       </div>

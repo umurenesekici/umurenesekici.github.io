@@ -5,9 +5,9 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[var(--bg-primary)]/85 backdrop-blur-md z-50 border-b border-[var(--border)]">
+    <nav className="fixed top-0 left-0 w-full bg-(--bg-primary)/85 backdrop-blur-md z-50 border-b border-(--border)">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#home" className="text-xl font-bold text-[var(--accent-light)] font-mono tracking-wider">
+        <a href="#home" className="text-xl font-bold text-(--accent-light) font-mono tracking-wider">
           {profile.logo}
         </a>
 
@@ -16,7 +16,7 @@ export default function Navbar() {
             <a
               key={idx}
               href={link.href}
-              className="text-[var(--text-secondary)] hover:text-[var(--accent-light)] transition-colors duration-200"
+              className="text-(--text-secondary) hover:text-(--accent-light) transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -25,7 +25,7 @@ export default function Navbar() {
 
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-[var(--text-primary)] p-2"
+          className="md:hidden text-(--text-primary) p-2"
           aria-label="Menüyü aç/kapat"
         >
           {open ? (
@@ -41,13 +41,13 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden flex flex-col gap-1 px-6 pb-4 border-t border-[var(--border)] bg-[var(--bg-primary)]">
+        <div className="md:hidden flex flex-col gap-1 px-6 pb-4 border-t border-(--border) bg-(--bg-primary)">
           {navLinks.map((link, idx) => (
             <a
               key={idx}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="py-3 text-sm font-mono text-[var(--text-secondary)] hover:text-[var(--accent-light)] border-b border-[var(--border)] last:border-b-0"
+              className="py-3 text-sm font-mono text-(--text-secondary) hover:text-(--accent-light) border-b border-(--border) last:border-b-0"
             >
               {link.label}
             </a>

@@ -2,16 +2,16 @@ import { stats, profile } from '../constants'
 
 export default function About() {
   return (
-    <section id="about" className="py-20 px-6 bg-[var(--bg-secondary)]">
+    <section id="about" className="py-20 px-6 bg-(--bg-secondary)">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-3 mb-10">
-          <span className="font-mono text-[var(--accent-light)] text-sm">01.</span>
-          <h2 className="text-2xl lg:text-3xl font-bold text-[var(--text-primary)]">Hakkımda</h2>
-          <span className="flex-1 h-px bg-[var(--border)]"></span>
+          <span className="font-mono text-(--accent-light) text-sm">01.</span>
+          <h2 className="text-2xl lg:text-3xl font-bold text-(--text-primary)">Hakkımda</h2>
+          <span className="flex-1 h-px bg-(--border)"></span>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-12">
-          <div className="lg:col-span-2 space-y-5 text-[var(--text-secondary)] text-base lg:text-lg leading-relaxed">
+          <div className="lg:col-span-2 space-y-5 text-(--text-secondary) text-base lg:text-lg leading-relaxed">
             <p>{profile.bio}</p>
             <p>
               Papilon Savunma Teknoloji ve Ticaret A.Ş. bünyesinde sistem mühendisi olarak başladığım kariyerime,
@@ -30,10 +30,10 @@ export default function About() {
             {stats.map((stat, idx) => (
               <div
                 key={idx}
-                className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-5 text-center"
+                className="bg-(--surface) border border-(--border) rounded-lg p-5 text-center"
               >
-                <p className="text-2xl lg:text-3xl font-bold text-[var(--accent-light)] font-mono">{stat.value}</p>
-                <p className="text-xs text-[var(--text-secondary)] mt-1.5 leading-snug">{stat.label}</p>
+                <p className="text-2xl lg:text-3xl font-bold text-(--accent-light) font-mono">{stat.value}</p>
+                <p className="text-xs text-(--text-secondary) mt-1.5 leading-snug">{stat.label}</p>
               </div>
             ))}
           </div>

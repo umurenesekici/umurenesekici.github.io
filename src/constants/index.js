@@ -5,7 +5,7 @@ export const profile = {
   location: "Ankara, Türkiye",
   email: "umur3kici@gmail.com",
   linkedin: "https://www.linkedin.com/in/umur-enes-ekici/",
-  bio: "Linux & Windows sistem yönetimiyle ilgilenen bir sistem mühendisiyim. Sistemlerin genel yapısını, arka planındaki karmaşık problemleri çözmeyi, optimize etmeyi ve sorunsuz çalışan güvenli yapılar kurmakla ilgileniyorum.",
+  bio: "Linux & Windows sistem kurulumu veyönetimiyle ilgilenen bir sistem mühendisiyim. Sistemlerin genel yapısını, arka planındaki karmaşık problemleri çözmeyi, optimize etmeyi ve sorunsuz çalışan güvenli yapılar kurmakla ilgileniyorum.",
 };
 
 export const navLinks = [
@@ -30,12 +30,12 @@ export const systemLogs = `# Status: Operational
 # Focus: System & Solution Architecture
 # Platforms: Linux, Windows Server
 # Domains: Network Security, Biometric Systems
-# Experience: 2+ years @ Papilon Savunma
+# Experience: 4+ years @ Papilon Savunma
 # Certifications: 14+
 > _`;
 
 export const stats = [
-  { value: "2+", label: "Yıl Deneyim" },
+  { value: "4+", label: "Yıl Deneyim" },
   { value: "7+", label: "Uluslararası Proje" },
   { value: "14+", label: "Sertifika" },
   { value: "2", label: "Platform: Linux & Windows" },
@@ -160,5 +160,6 @@ export const projects = [
     country: "Tanzanya",
     description: "Suç kayıtları biyometrik tanımlama sistemi.",
     icon: "face",
+    icon: "fingerprint",
   },
 ];

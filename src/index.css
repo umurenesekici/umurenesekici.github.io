@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #060b16;
+  --bg-secondary: #0a121f;
+  --surface: #101b2d;
+  --surface-hover: #15233a;
+  --border: #1f2d45;
+  --border-strong: #2c3f5c;
+  --text-primary: #eef2f8;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748a;
+  --accent: #2f6fed;
+  --accent-light: #5b8def;
+  --accent-dim: rgba(47, 111, 237, 0.12);
+  --status: #22c55e;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+}
+
+::selection {
+  background-color: var(--accent-dim);
+  color: var(--text-primary);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}

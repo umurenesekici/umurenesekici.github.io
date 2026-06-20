@@ -44,13 +44,13 @@ export const stats = {
     { value: "4+", label: "Yıl Deneyim" },
     { value: "7+", label: "Uluslararası Proje" },
     { value: "14+", label: "Sertifika" },
-    { value: "5+", label: "Ülkede Saha Operasyonu" },
+    { value: "7+", label: "Saha Operasyonu" },
   ],
   en: [
     { value: "4+", label: "Years of Experience" },
     { value: "7+", label: "International Projects" },
     { value: "14+", label: "Certificates" },
-    { value: "5+", label: "Countries of Operation" },
+    { value: "7+", label: "Field Operations" },
   ],
 };
 

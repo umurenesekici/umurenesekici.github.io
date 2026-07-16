@@ -38,7 +38,7 @@ export default function Projects() {
     <section id="projects" className="py-16 sm:py-20 px-4 sm:px-6 bg-[var(--bg-secondary)]">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-3 mb-6">
-          <span className="font-mono text-[var(--accent-light)] text-sm">05.</span>
+          <span className="font-mono text-[var(--accent-light)] text-xs border border-[var(--border)] rounded px-2 py-1">05</span>
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[var(--text-primary)]">{t.projects}</h2>
           <span className="flex-1 h-px bg-[var(--border)]"></span>
         </div>
@@ -49,7 +49,7 @@ export default function Projects() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {projects.map((project, idx) => (
-            <div key={idx} className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-5 sm:p-6 hover:border-[var(--accent)]/50 transition-colors duration-300 flex flex-col">
+            <div key={idx} className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent)]/50 hover:shadow-lg hover:shadow-black/30 flex flex-col">
               <div className="flex items-center justify-between mb-4">
                 <svg className="w-6 h-6 sm:w-7 sm:h-7 text-[var(--accent-light)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                   {icons[project.icon]}

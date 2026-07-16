@@ -10,7 +10,7 @@ export default function Experience() {
     <section id="experience" className="py-16 sm:py-20 px-4 sm:px-6 bg-[var(--bg-secondary)]">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-3 mb-8 sm:mb-10">
-          <span className="font-mono text-[var(--accent-light)] text-sm">03.</span>
+          <span className="font-mono text-[var(--accent-light)] text-xs border border-[var(--border)] rounded px-2 py-1">03</span>
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[var(--text-primary)]">{t.experience}</h2>
           <span className="flex-1 h-px bg-[var(--border)]"></span>
         </div>
@@ -29,7 +29,7 @@ export default function Experience() {
                   }`}
                 ></span>
 
-                <div className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-5 sm:p-6 hover:border-[var(--border-strong)] transition-colors duration-300">
+                <div className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--border-strong)] hover:shadow-lg hover:shadow-black/30">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2">
                     <h3 className="text-base sm:text-lg font-semibold text-[var(--text-primary)]">{job.role}</h3>
                     <span className="font-mono text-xs text-[var(--accent-light)]">{job.period}</span>

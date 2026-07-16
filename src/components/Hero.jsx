@@ -20,6 +20,9 @@ export default function Hero() {
             maskImage: 'linear-gradient(to bottom, black, transparent 55%)',
           }}
         ></div>
+        <div className="absolute inset-x-0 top-0 h-[28rem] overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)]">
+          <div className="absolute inset-x-0 h-px bg-gradient-to-r from-transparent via-[var(--accent-light)] to-transparent shadow-[0_0_6px_1px_var(--accent)] animate-[scan-sweep_6s_ease-in-out_infinite]"></div>
+        </div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col items-center text-center gap-6 sm:gap-8 animate-[fade-up_0.8s_ease-out]">

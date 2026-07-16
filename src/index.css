@@ -58,6 +58,15 @@ body {
   }
 }
 
+@keyframes scan-sweep {
+  0% {
+    top: -5%;
+  }
+  100% {
+    top: 105%;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;

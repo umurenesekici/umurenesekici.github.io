@@ -9,7 +9,7 @@ export default function About() {
     <section id="about" className="py-16 sm:py-20 px-4 sm:px-6 bg-[var(--bg-secondary)]">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-3 mb-8 sm:mb-10">
-          <span className="font-mono text-[var(--accent-light)] text-sm">01.</span>
+          <span className="font-mono text-[var(--accent-light)] text-xs border border-[var(--border)] rounded px-2 py-1">01</span>
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[var(--text-primary)]">{t.about}</h2>
           <span className="flex-1 h-px bg-[var(--border)]"></span>
         </div>
@@ -24,7 +24,7 @@ export default function About() {
 
           <div className="grid grid-cols-2 gap-3 sm:gap-4">
             {stats[lang].map((stat, idx) => (
-              <div key={idx} className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4 sm:p-5 text-center">
+              <div key={idx} className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4 sm:p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent)]/50 hover:shadow-lg hover:shadow-black/30">
                 <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-[var(--accent-light)] font-mono">{stat.value}</p>
                 <p className="text-[11px] sm:text-xs text-[var(--text-secondary)] mt-1.5 leading-snug">{stat.label}</p>
               </div>

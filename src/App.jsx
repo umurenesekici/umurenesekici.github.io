@@ -12,7 +12,7 @@ import Reveal from './components/Reveal'
 function App() {
   return (
     <div className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] font-sans antialiased overflow-x-hidden">
-      <div className="fixed top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[var(--accent)] to-transparent opacity-60 z-[60]"></div>
+      <div className="fixed top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-[var(--accent-light)] to-transparent z-[60]"></div>
       <Navbar />
       <Hero />
       <Reveal><About /></Reveal>

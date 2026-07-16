@@ -6,8 +6,13 @@ export default function Hero() {
   const t = sectionTitles[lang]
 
   return (
-    <section id="home" className="pt-28 sm:pt-32 lg:pt-40 pb-16 sm:pb-20 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-6 sm:gap-8">
+    <section id="home" className="relative pt-28 sm:pt-32 lg:pt-40 pb-16 sm:pb-20 px-4 sm:px-6 overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute left-1/2 top-0 h-[36rem] w-[36rem] -translate-x-1/2 -translate-y-1/3 rounded-full bg-[var(--accent)]/15 blur-[120px]"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(var(--border)_1px,transparent_1px),linear-gradient(90deg,var(--border)_1px,transparent_1px)] bg-[size:56px_56px] opacity-[0.15] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_0%,black,transparent)]"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-6 sm:gap-8 animate-[fade-up_0.8s_ease-out]">
         <div className="flex-1 space-y-5 sm:space-y-6 max-w-3xl">
           <p className="text-[var(--accent-light)] font-mono text-xs sm:text-sm tracking-wide uppercase">{t.heroLabel}</p>
           <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-[var(--text-primary)] leading-tight tracking-tight">

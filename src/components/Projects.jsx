@@ -49,7 +49,7 @@ export default function Projects() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {projects.map((project, idx) => (
-            <div key={idx} className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent)]/50 hover:shadow-lg hover:shadow-black/30 flex flex-col">
+            <div key={idx} className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent)]/50 hover:shadow-lg hover:shadow-black/30 active:-translate-y-1 active:border-[var(--accent)]/50 active:shadow-lg active:shadow-black/30 flex flex-col">
               <div className="flex items-center justify-between mb-4">
                 <svg className="w-6 h-6 sm:w-7 sm:h-7 text-[var(--accent-light)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                   {icons[project.icon]}

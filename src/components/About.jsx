@@ -24,7 +24,7 @@ export default function About() {
 
           <div className="grid grid-cols-2 gap-3 sm:gap-4">
             {stats[lang].map((stat, idx) => (
-              <div key={idx} className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4 sm:p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent)]/50 hover:shadow-lg hover:shadow-black/30">
+              <div key={idx} className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4 sm:p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent)]/50 hover:shadow-lg hover:shadow-black/30 active:-translate-y-1 active:border-[var(--accent)]/50 active:shadow-lg active:shadow-black/30">
                 <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-[var(--accent-light)] font-mono">{stat.value}</p>
                 <p className="text-[11px] sm:text-xs text-[var(--text-secondary)] mt-1.5 leading-snug">{stat.label}</p>
               </div>

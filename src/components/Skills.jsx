@@ -17,7 +17,7 @@ export default function Skills() {
 
         <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5">
           {groups.map((group, idx) => (
-            <div key={idx} className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--border-strong)] hover:shadow-lg hover:shadow-black/30">
+            <div key={idx} className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--border-strong)] hover:shadow-lg hover:shadow-black/30 active:-translate-y-1 active:border-[var(--border-strong)] active:shadow-lg active:shadow-black/30">
               <h3 className="text-[var(--accent-light)] font-mono text-xs mb-4 tracking-widest uppercase">
                 {group.category}
               </h3>

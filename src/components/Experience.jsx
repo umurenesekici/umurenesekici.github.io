@@ -29,7 +29,7 @@ export default function Experience() {
                   }`}
                 ></span>
 
-                <div className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--border-strong)] hover:shadow-lg hover:shadow-black/30">
+                <div className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--border-strong)] hover:shadow-lg hover:shadow-black/30 active:-translate-y-1 active:border-[var(--border-strong)] active:shadow-lg active:shadow-black/30">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2">
                     <h3 className="text-base sm:text-lg font-semibold text-[var(--text-primary)]">{job.role}</h3>
                     <span className="font-mono text-xs text-[var(--accent-light)]">{job.period}</span>
